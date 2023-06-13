@@ -2,10 +2,10 @@ const mysql=require("mysql")
 
 
 const conx=mysql.createConnection({
-    host : '192.168.5.252', 
+    host : 'localhost', 
     user : "Admin",
-    password :"Asterisk%2022%",
-    database : "astdb",
+    password :"%Pucelle6969",
+    database : "ASTDB",
     dateStrings: true
 }) ; 
 
