@@ -82,6 +82,13 @@ app.post("/RefreshXML",(req,res) => {
       });
 })
 
+app.post("/EditContact/:id/:nom/:num",(req,res) => {
+    conx.query("Update Contact SET NAME=?, Phone=? WHERE ID=?",[req.params.nom,req.params.num,req.params.id],(err, result) => {
+        if (err) throw err ;
+        res.send("OK")  ;
+    })
+})
+
 
 app.listen(port , console.log("====> Server Listening on "+port))
  
